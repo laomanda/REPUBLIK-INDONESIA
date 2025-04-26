@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKRI - Negara Kesatuan Republik Indonesia</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="NKRI.css">
+    <link rel="icon" href="./assets/Garuda.jpg">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 w-full z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#hero" class="flex items-center space-x-3">
+                    <span class="text-xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                        NKRI
+                      </span>                                                                                                                                    
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#tentang" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Tentang NKRI</a>
+                    <a href="#pentingnya" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Pentingnya NKRI</a>
+                    <a href="#cara-menjaga" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Cara Menjaga</a>
+                    <a href="#sikap-warga" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Sikap Warga</a>
+                    <a href="#ancaman" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Ancaman</a>
+                    <a href="#penutup" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Penutup</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="lg:hidden hidden mt-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#tentang" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Tentang NKRI</a>
+                    <a href="#pentingnya" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Pentingnya NKRI</a>
+                    <a href="#cara-menjaga" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Cara Menjaga</a>
+                    <a href="#sikap-warga" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Sikap Warga</a>
+                    <a href="#ancaman" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Ancaman</a>
+                    <a href="#penutup" class="text-gray-700 hover:text-red-600 transition-colors font-medium">Penutup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Negara Kesatuan Republik Indonesia</h1>
+                <p class="text-lg md:text-xl text-white mb-8 max-w-3xl mx-auto">Menjaga Kesatuan dan Persatuan dalam Keberagaman</p>
+                <a href="#tentang" class="bg-white text-red-600 font-medium px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-flex items-center">
+                    <span>Jelajahi</span>
+                    <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tentang NKRI Section -->
+    <section id="tentang" class="section-height bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang NKRI</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Informasi dasar tentang Negara Kesatuan Republik Indonesia</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-map-marked-alt text-4xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Wilayah NKRI</h3>
+                    <p class="text-gray-600 text-center">NKRI meliputi seluruh wilayah daratan, lautan, dan udara yang diakui secara sah sebagai bagian dari negara Indonesia.</p>
+                </div>
+                
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-users text-4xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Penduduk</h3>
+                    <p class="text-gray-600 text-center">Indonesia memiliki lebih dari 270 juta penduduk, dengan beragam suku, agama, dan budaya yang memperkaya bangsa.</p>
+                </div>
+                
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-landmark text-4xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Sistem Pemerintahan</h3>
+                    <p class="text-gray-600 text-center">Indonesia menganut sistem pemerintahan republik dengan presiden sebagai kepala negara dan kepala pemerintahan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pentingnya Menjaga NKRI Section -->
+    <section id="pentingnya" class="section-height bg-gray-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pentingnya Menjaga Keutuhan NKRI</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Pentingnya menjaga keutuhan dan kesatuan NKRI di tengah keberagaman</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="./assets/PetaIndonesia.svg" alt="Pentingnya NKRI" class="rounded-xl shadow-xl mx-auto transform hover:scale-105 transition-transform duration-300" />
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Alasan Menjaga Keutuhan NKRI</h3>
+                        <p class="text-gray-600 mb-6">Menjaga keutuhan NKRI penting untuk mempertahankan persatuan, melindungi keberagaman, menjamin stabilitas nasional, dan memastikan pembangunan merata demi masa depan bangsa yang sejahtera dan berdaulat.</p>
+                        
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-shield-alt text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Keamanan Nasional</h4>
+                                <p class="text-sm text-gray-600">Melindungi negara dari ancaman demi rasa aman rakyat.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-handshake text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Persatuan dalam Keberagaman</h4>
+                                <p class="text-sm text-gray-600">Menyatukan perbedaan demi Indonesia yang utuh.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Kemajuan Ekonomi</h4>
+                                <p class="text-sm text-gray-600">Stabilitas negara mendorong pertumbuhan ekonomi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cara Menjaga NKRI Section -->
+    <section id="cara-menjaga" class="section-height bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Cara Menjaga NKRI</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Langkah-langkah yang dapat kita lakukan untuk menjaga keutuhan NKRI</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Kenapa Kita Harus Menjaga NKRI -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-question-circle text-red-600 mr-3"></i>
+                        Kenapa Kita Harus Menjaga NKRI
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <!-- Placeholder: Akan diisi dengan konten sebenarnya -->
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-red-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Memastikan Indonesia tetap utuh meski beragam suku dan budaya.</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-red-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Melindungi negara dari ancaman baik internal maupun eksternal.</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-red-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Stabilitas negara membuka peluang untuk pembangunan dan kesejahteraan.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pesan Utama -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-bullhorn text-red-600 mr-3"></i>
+                        Pesan Utama
+                    </h3>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-600 p-5 rounded">
+                        <p class="italic text-gray-700">Menjaga NKRI melalui persatuan, menghormati keberagaman, dan mendukung pemerintahan yang adil serta stabil.</p>
+                    </div>
+                    
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-heart text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Cinta Tanah Air</h4>
+                                <p class="text-sm text-gray-600">Cinta tanah air berarti menghargai dan menjaga lingkungan serta budaya Indonesia sebagai identitas bangsa.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hands-helping text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Gotong Royong</h4>
+                                <p class="text-sm text-gray-600">Gotong royong adalah semangat saling membantu untuk mencapai tujuan bersama demi kemajuan negara.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sikap Warga Section -->
+    <section id="sikap-warga" class="section-height bg-gray-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sikap Warga terhadap Sistem Pemerintahan</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Bagaimana warga negara seharusnya bersikap terhadap sistem pemerintahan</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-stretch gap-8">
+                <!-- Patuh Hukum -->
+                <div class="md:w-1/3 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-r from-red-600 to-red-400 p-6 text-center">
+                        <i class="fas fa-balance-scale text-white text-4xl mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Patuh Hukum</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Mematuhi peraturan sebagai bentuk tanggung jawab warga negara.</p>
+                        <div class="mt-6">
+                            <a href="https://youtu.be/8oeuDgKhtYI?si=lWcP-2HvjKnvi1cc" class="text-red-600 hover:text-red-800 font-medium inline-flex items-center" target="_blank">
+                                <span>Pelajari lebih lanjut</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partisipasi Politik -->
+                <div class="md:w-1/3 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-r from-red-600 to-red-400 p-6 text-center">
+                        <i class="fas fa-vote-yea text-white text-4xl mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Partisipasi Politik</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Ikut serta dalam pemilu dan menyuarakan aspirasi secara damai.</p>
+                        <div class="mt-6">
+                            <a href="https://youtu.be/82oRj-l9AUE?si=Us4Q9nu4oqCccWvk" class="text-red-600 hover:text-red-800 font-medium inline-flex items-center" target="_blank">
+                                <span>Pelajari lebih lanjut</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kritik Konstruktif -->
+                <div class="md:w-1/3 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gradient-to-r from-red-600 to-red-400 p-6 text-center">
+                        <i class="fas fa-comments text-white text-4xl mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white">Kritik Konstruktif</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Memberi masukan yang membangun demi perbaikan sistem pemerintahan.</p>
+                        <div class="mt-6">
+                            <a href="https://youtu.be/ZDoyjW3urvM?si=v7JTIhiWLMGklwuj" class="text-red-600 hover:text-red-800 font-medium inline-flex items-center" target="_blank">
+                                <span>Pelajari lebih lanjut</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ancaman Section -->
+    <section id="ancaman" class="section-height bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ancaman terhadap NKRI</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Berbagai ancaman yang dapat mengganggu keutuhan NKRI</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gavel text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Ancaman Politik</h3>
+                    <p class="text-gray-600 text-center">Upaya menggoyahkan stabilitas pemerintahan seperti kudeta, campur tangan asing dalam urusan dalam negeri, atau politik identitas yang memecah belah bangsa.</p>
+                </div>
+                
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-coins text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Ancaman Ekonomi</h3>
+                    <p class="text-gray-600 text-center">Gangguan terhadap sistem ekonomi nasional, seperti embargo, monopoli asing, krisis keuangan, hingga ketimpangan ekonomi yang memicu ketidakstabilan sosial.</p>
+                </div>
+                
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users-slash text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Ancaman Sosial</h3>
+                    <p class="text-gray-600 text-center">Konflik antarkelompok masyarakat, penyebaran berita hoaks, radikalisme, intoleransi, dan upaya memecah persatuan melalui isu-isu SARA (Suku, Agama, Ras, dan Antargolongan).</p>
+                </div>
+                
+                <div class="card bg-white rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-virus text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Ancaman Keamanan</h3>
+                    <p class="text-gray-600 text-center">Ancaman berupa terorisme, separatisme, pemberontakan bersenjata, peredaran narkoba, hingga pelanggaran wilayah seperti penyelundupan atau invasi asing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Penutup Section -->
+    <section id="penutup" class="section-height bg-red-600 py-20 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Penutup</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+                <p class="max-w-3xl mx-auto">Kesimpulan dan pesan akhir</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-filter backdrop-blur-sm">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                            <div class="bg-white p-3 rounded-full">
+                                <i class="fas fa-flag text-red-600 text-5xl"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-2/3 md:pl-8">
+                            <h3 class="text-2xl font-semibold mb-4">Menjaga NKRI adalah Tanggung Jawab Bersama</h3>
+                            <p class="mb-6">Setiap warga negara memiliki peran penting dalam menjaga keutuhan NKRI. Dengan rasa cinta tanah air, sikap toleransi, dan kepedulian terhadap sesama, kita dapat menjaga persatuan, membangun kemajuan, dan memastikan Indonesia tetap berdiri kokoh sebagai negara yang merdeka, berdaulat, dan bermartabat.</p>
+                            
+                            <div class="flex flex-wrap gap-4">
+                                <a href="#hero" class="bg-white text-red-600 font-medium px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors shadow-lg inline-flex items-center">
+                                    <i class="fas fa-arrow-up mr-2"></i>
+                                    <span>Kembali ke Atas</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#hero" class="flex items-center space-x-3">
+                        <span class="font-bold text-xl">NKRI</span>
+                    </a>
+                    <p class="mt-2 text-gray-400 text-sm">© 2025 Negara Kesatuan Republik Indonesia</p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Tautan</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#tentang" class="text-gray-400 hover:text-white transition-colors">Tentang NKRI</a></li>
+                            <li><a href="#pentingnya" class="text-gray-400 hover:text-white transition-colors">Pentingnya NKRI</a></li>
+                            <li><a href="#cara-menjaga" class="text-gray-400 hover:text-white transition-colors">Cara Menjaga</a></li>
+                            <li><a href="#sikap-warga" class="text-gray-400 hover:text-white transition-colors">Sikap Warga</a></li>
+                            <li><a href="#ancaman" class="text-gray-400 hover:text-white transition-colors">Ancaman</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Sumber Daya</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://youtu.be/lG3iwaq2d-U?si=WrL7TW5yVmg-C-uk" class="text-gray-400 hover:text-white transition-colors">Konstitusi</a></li>
+                            <li><a href="https://youtu.be/MsLJ34Xl1Pc?si=vfJbm7XySyaYIM5R" class="text-gray-400 hover:text-white transition-colors">Undang-Undang</a></li>
+                            <li><a href="https://youtu.be/7sMUavUymfs?si=S2EnbSU3X10ieh0d" class="text-gray-400 hover:text-white transition-colors">Pancasila</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dokumen Resmi</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Kontak</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-red-600 mr-2"></i>
+                                <a href="mailto:info@nkri.go.id" class="text-gray-400 hover:text-white transition-colors">info@nkri.go.id</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-red-600 mr-2"></i>
+                                <a href="tel:+62895321205351" class="text-gray-400 hover:text-white transition-colors">+62 895 3212 05351</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                                <span class="text-gray-400">Jakarta, Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Berlangganan</h4>
+                        <p class="text-gray-400 mb-4 text-sm">Dapatkan informasi terbaru tentang NKRI</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Email Anda" class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none flex-grow">
+                            <button class="bg-red-600 text-white px-4 py-2 rounded-r-lg hover:bg-red-700 transition-colors">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dibuat oleh -->
+            <div class="mt-8 text-center text-sm text-gray-500">
+                Dibuat oleh <span class="text-white font-semibold">Jakkob Panjaitan</span>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- JavaScript -->
+    <script src="NKRI.js"></script>
+</body>
+</html>
